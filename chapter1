@@ -1,0 +1,8 @@
+URL + lib = urllib
+
+url一般格式("[]"为可选项）
+protocol：//hostname[:port]/path/[;parameters][?query]#fragment
+
+第一部分：http, https, ftp, file, ed2k...
+第二部分：域名/IP[:端口号]默认80（各种传输协议都有默认的端口号）
+第三部分：目录/文件名
