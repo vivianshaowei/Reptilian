@@ -1,0 +1,22 @@
+1、chr(integer)
+把整数转化成对应的字母.
+
+
+2、ord(str)
+把对应的字符转成整数.
+
+3、bool(x)
+把一个值转化为布尔值,如果该值为假或者省略返回False,否则返回True.
+
+>>> tmp = [False,None,0,0.0,'',(),[],{}]
+>>> for i in tmp:
+        print(bool(i))
+
+        
+False
+False
+False
+False
+False
+False
+False
