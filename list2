@@ -1,0 +1,38 @@
+1、访问多层列表 list[a][b]...
+
+2、count()计算参数在列表中出现的次数
+list.count(a)
+
+3、index()访问参数在列表中的位置
+list.index(x)
+list.index(x,a,b) #a到b之间的
+
+4、reverse（）原地翻转
+list.reverse()
+
+5、sort（）用指定的方法对列表进行排序
+list.sort(reverse=False)
+
+6、使用切片进行列表的拷贝
+listb = lista[:]
+listb = lista   #多了指向lista的一个标签
+
+7、create list
+list = []
+list = [1,'a',[1,2]]
+list(range(5))          #range(start,stop,step)
+
+8、while True:
+      if a == b
+        break
+       a = 1
+9、continue  执行到continue直接跳到循环体开始位置判断是否符合，条件成立才会据需执行
+
+for i in range(10):
+    if i%2 != 0
+        print(i)
+        continue
+    i += 2
+    print(i)
+
+
