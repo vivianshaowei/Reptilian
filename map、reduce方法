@@ -1,0 +1,46 @@
+1、 |  map(func, *iterables) --> map object
+ |  
+ |  Make an iterator that computes the function using arguments from（迭代器）
+ |  each of the iterables.  Stops when the shortest iterable is exhausted.
+ 
+ 
+ >>> def f(x):
+        return x*x
+>>> list(map(f,[1,2,3,4,5,6]))
+[1, 4, 9, 16, 25, 36]
+>>>
+
+>>> def ff(x, y):
+        return x+y
+>>> list(map(ff, [1,2,3], [4,5,6]))
+[5, 7, 9]
+
+2、reduce(...)
+    reduce(function, sequence[, initial]) -> value
+    
+reduce函数即为化简，它是这样一个过程：每次迭代，将上一次的迭代结果（第一次时为init的元素，
+如没有init则为seq的第一个元素）与下一个元素一同执行一个二元的func函数。在reduce函数中，
+init是可选的，如果使用，则作为第一次迭代的第一个元素使用。
+    Apply a function of two arguments cumulatively to the items of a sequence,
+    from left to right, so as to reduce the sequence to a single value.
+    For example, reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) calculates
+    ((((1+2)+3)+4)+5).  If initial is present, it is placed before the items
+    of the sequence in the calculation, and serves as a default when the
+    sequence is empty.
+
+>>> from functools import reduce
+>>> def ad(x,y):
+        return x + y
+>>> reduce(ad, [1, 3, 5, 7, 9])
+25
+>>>ad(ad(ad(ad(1,3),5),7),9) 
+25
+
+
+>>> from functools import reduce
+>>> reduce(lambda x, y: x * y, range(1, 5 + 1)) #1*2*3*4*5
+120
+>>>reduce(lambda x, y: x * y, range(1, 5 + 1), 2)#2*1*2*3*4*5
+240
+
+
