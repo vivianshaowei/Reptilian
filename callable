@@ -1,0 +1,30 @@
+1、callable（object）       #（ 美 ['kɔ:ləbəl]  adj.可随时支取的，请求即付的，随时可偿还的）
+    检查对象object是否可调用。如果返回True，object仍然可能调用失败；但如果返回False，调用对象ojbect绝对不会成功。
+    
+    
+    
+    >>> callable([1,'2',3.0])
+False
+>>> def FishC():
+        pass
+>>> callable(FishC)
+True
+>>> class AA:
+        pass
+
+>>> callable(AA)
+True
+>>> aa = AA()
+>>> callable(aa)
+False
+>>> class BB:
+        def __call__(self):
+                pass
+
+        
+>>> callable(BB)
+True
+>>> bb = BB()
+>>> callable(bb)
+True
+>>> 
