@@ -1,0 +1,28 @@
+1、min(iterable, *[, default, key]) 
+min(arg1, arg2, *args[, key]) 
+    返回最小值或者最小参数。
+    
+    >>> min(1,2,3,-1,-2,-3)
+-3
+>>> min([1,2,3],[1,2])
+[1, 2]
+>>> min([1,2,3],[-1,7,8])
+[-1, 7, 8]
+>>>
+
+
+>>> a = range(-10,10)
+>>> max(a,key=abs)
+-10
+>>> max(a)
+9
+>>> min(a,key=abs)
+0
+>>> min(a)
+-10
+
+2、max(iterable, *[, default, key]) 
+max(arg1, arg2, *args[, key])
+    返回最大值或者最大参数
+    
+    
