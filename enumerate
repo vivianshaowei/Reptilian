@@ -1,0 +1,47 @@
+内置函数
+1.enumerate(iterable, start=0)
+返回一个枚举类型
+
+(('a','b','c'))
+（[a,b,c]）
+('abc')
+({'a':1,'b':2})
+
+2. sort_sorted&reverse&reverse_reversed
+sorted(iterable, key=None, reverse=False)-->new sorted list
+返回迭代器中的元素排序的新列表
+
+>>> i = [x for x in range(-5,6)]
+>>> i
+[-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+>>> sorted(i)
+[-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+>>> sorted(i,reverse=True)
+[5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5]
+>>> 
+sorted与sort不同。前者是内置函数，后者是列表、字典的方法；前者返回一个新列表。
+
+>>> sorted([36, 5, -12, 9, -21], key=abs)
+[5, 9, -12, -21, 36]
+>>> sorted(['bob', 'about', 'Zoo', 'Credit'])
+['Credit', 'Zoo', 'about', 'bob']
+>>> sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower)
+['about', 'bob', 'Credit', 'Zoo']
+>>> sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True)
+['Zoo', 'Credit', 'bob', 'about']
+>>> 
+
+
+reversed(seq) 
+    返回一个逆置的迭代器
+    
+i = [x for x in range(-5,6)]
+>>> for x in reversed(i):
+        print(x,' ',end='')
+    
+5  4  3  2  1  0  -1  -2  -3  -4  -5  
+>>> 
+    
+    reversed与reverse不同。前者是内置函数，后者是列表、字典的方法。前者返回一个新列表。
+    
+    
