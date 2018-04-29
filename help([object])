@@ -3,3 +3,21 @@
 如果参数是一个字符串,字符串查找模块的名称,功能,类、方法、关键字或文档的主题,和一个帮助页面打印在控制台上。
 如果参数是任何其他类型的对象,生成一个对象上的帮助页面。调用内置的帮助系统。(这个函数是用于交互式使用。)
 
+
+>>> help()
+
+Welcome to Python 3.4!  This is the interactive help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/3.4/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> 
