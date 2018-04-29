@@ -1,0 +1,42 @@
+1、isinstance(object, classinfo) 
+返回True如果参数object是classinfo的一个实例，否则返回False。
+
+>>> class A1:
+        pass
+
+>>> class A2(A1):
+        pass
+
+>>> class A3(A2):
+        pass
+
+>>> isinstance(A2,A1)
+False
+>>> isinstance(A3,A2)
+False
+>>> isinstance(A3,A1)
+False
+>>> a1 = A1()
+>>> a2 = A2()
+>>> a3 = A3()
+>>> isinstance(a1,A1)
+True
+>>> isinstance(a3,A1)
+True
+>>> isinstance(a2,A1)
+True
+>>> isinstance(a3,a1)
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    isinstance(a3,a1)
+TypeError: isinstance() arg 2 must be a type or tuple of types
+>>> 
+
+2、issubclass(class, classinfo) 
+返回True如果参数class是classinfo的一个子类，否则返回False。
+
+>>> issubclass(A2,A1)
+True
+>>> issubclass(A3,A1)
+True
+>>> 
