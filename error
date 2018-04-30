@@ -1,0 +1,11 @@
+1、SyntaxError: invalid syntax 无效句法
+
+
+SyntaxError: invalid character in identifier 语法错误：标识符中的无效字符
+
+
+2、SyntaxError: EOL while scanning string literal 扫描字符串文字时的EOL
+EOLEnd of Life 寿命终止; effective operational length 有效操作长度
+
+3、TypeError:
+implicitly  (隐式）
