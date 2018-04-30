@@ -9,3 +9,9 @@ EOLEnd of Life 寿命终止; effective operational length 有效操作长度
 
 3、TypeError:
 implicitly  (隐式）
+
+4、AttributeError: 'object' object has no attribute 'isAnagram'  AbjtError：“对象”对象没有属性“iSaGRAM”
+
+5、ValueError: too many values to unpack (expected 2)  ValueError：打开的值太多（预期2）
+
+6、IndexError: list index out of range   索引错误：超出范围的列表索引
