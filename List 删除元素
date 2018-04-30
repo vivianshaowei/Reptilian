@@ -1,0 +1,37 @@
+Python List 删除元素
+2016年03月07日 00:09:43
+阅读数：7204
+1. 使用del删除指定元素
+li = [1, 2, 3, 4]
+del li[3]
+print(li)
+# Output [1, 2, 3]
+1
+2
+3
+4
+2. 使用list方法pop删除元素
+li = [1, 2, 3, 4]
+li.pop(2)
+print(li)
+# Output [1, 2, 4]
+1
+2
+3
+4
+注：指定pop参数，将会删除该位置的元素；无参数时默认删除最后一个元素
+
+3. 使用切片删除元素
+li = [1, 2, 3, 4]
+li = li[:2] + li[3:]
+print(li)
+# Output [1, 2, 4]
+1
+2
+3
+4
+4. 使用list方法remove删除指定值的元素
+li = [1, 2, 3, 4]
+li.remove(3)
+print(li)
+# Output [1, 2, 4]
