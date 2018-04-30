@@ -1,0 +1,19 @@
+1、  'Let\'s go!'
+
+2、 s = 'C:\now'
+print(s) #\没了
+
+s = 'C:\\now'
+
+s = r'C:\now' #可实现多个\,最优
+
+                    最后不能加\
+                    
+ 3、长字符串（3重引号字符串）
+ s = '''a'''
+ s = """a"""
+ 
+ 4、BIF == Built-in functions  (内置函数）
+ dir(__builtins__)
+ 
+ 
