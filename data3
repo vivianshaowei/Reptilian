@@ -12,3 +12,39 @@ small = x if x < y else y
 assert 3 > 4
 在程序中植入检查点，可以确保某个条件一定为真才执行
 
+5、datatype
+e计发
+1.5e4 == 15000
+True + True == 2
+
+6、类型转换
+int()
+str()
+float()
+
+float-->int    截断处理
+变量名不能为str
+
+7、import random
+a = random.randint(x,y)
+
+8、类型匹配isinstance(a,type)
+
+9、  
+3/2 == 1.5
+3.0//2 == 1.0
+
+// 除  数据类型保持a
+
+3**3 = 27
+
+10、幂操作的左侧一元操作符,**比它高；幂操作的右侧一元操作符,**比它低；
+-3 ** 2 == -9
+
+11、  3 < 4 <5
+相当于
+(3<4) and (4<5)
+
+12、逻辑运算符优先级
+not > and > or
+
