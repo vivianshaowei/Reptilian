@@ -1,0 +1,26 @@
+1、lambda表达式
+# lambda 参数: 表达式
+# 简洁、不需要考虑命名、简化代码的可读性
+g = lambda x: 2 * x + 1
+print(g(5))
+
+d = lambda x, y: x + y
+print(d(1, 2))
+
+2、filter过滤器(过滤非function的nums)
+filter(function or None ,iterable)
+  
+print(list(filter(None, [1, False, True])))
+
+  def odd(x):
+    return x % 2
+temp = range(10)
+show = filter(odd, temp)
+print(list(show))
+
+print(list(filter(lambda x: x % 2, range(10))))
+
+3、map映射
+将序列的每一个元素作为函数的参数运算加工，直到可迭代序列的每个元素都加工完毕，返回所有加工后的元素构成的新序列
+
+print(list(map(lambda x: x * 2, range(10))))
