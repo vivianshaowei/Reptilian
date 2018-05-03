@@ -1,0 +1,63 @@
+1、过程(procedure)是简单、特殊并且没有返回值的， python没有过程，没有写返回的默认返回None
+
+2、local variable:函数内定义的变量，函数执行是以一个栈的形式，执行完栈就清空，执行域在函数内
+Global variable：在函数内试图修改一个全局变量的话，python会在函数中新建一个同名的局部变量，互不干扰（应该避免）
+
+3、global count 可以在函数内部修改全局变量
+
+4、python支持嵌套 内部函数的一切操作都只在被嵌套的函数内
+
+5、函数式编程语言lisp
+
+6、闭包closure（内部函数调用外部函数的非全局变量，内部函数被称为闭包）
+def fun1():
+    print('fun1（）被调用)
+    def fun2():
+        print(fun2()调用）
+     fun2()
+     
+
+
+7、nonlocal 强制非局部变量
+nonlocal x
+
+def FunX(x):
+  def Funy(y):
+    return x*y
+   return FunY
+i = FunX(8)
+# i <function FunX.<locals>.FunY at 0.0000000002E931E0>
+i(5)
+# 40
+FunY(5) 
+#NameError
+
+def Fun1():
+  x = 5
+  def Fun2():
+    x *= x
+    return x
+   return Fun2
+ Fun1()
+ #UnboundlocalError
+ #试图修改外部变量被屏蔽
+ 
+8、容器类型
+def Fun1():
+  x = [5]
+  def Fun2():
+    x[0] *= x[0]
+    return x[0]
+   return Fun2
+  Fun1()
+  #25
+  
+9、nonlocal
+def Fun1():
+  x = 5
+  def Fun2():
+    nonlocal x
+    x *= x
+    return x
+   return Fun2
+ Fun1()
